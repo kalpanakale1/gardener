@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gardener</title>
+    <style>
+        @import url(css/bootstrap-icons.css);
+        @import url(css/bootstrap.min.css);
+        @import url(css/cdn.jsdelivr.net_npm_swiper@10_swiper-bundle.min.css);
+        @import url(css/cdnjs.cloudflare.com_ajax_libs_animate.css_4.1.1_animate.min.css);
+        @import url(css/animate.css);
+        @import url(css/media.css);
+        @import url(css/fonts.css);
+        @import url(css/style.css);
+    </style>
+</head>
+<body>
+
+    <div class="loader-area">
+        <div class="loader"></div>
+    </div>
+
+    <!-- topbar -->
+    <div class="topbar bg-dark py-2">
+        <div class="container d-none d-lg-block">
+            <div class="d-flex justify-content-between">
+                <div class="topbar-left">
+                    <ul class="navbar-nav hstack">
+                        <li class="nav-item">
+                            <a href="tel:+012 345 6789" class="nav-link text-light fs-6 font-opensans  pe-3"><i class="bi bi-telephone-fill pe-2"></i> +012 345 6789</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="mailto:" class="nav-link text-light fs-6 font-opensans pe-3"><i class="bi bi-envelope-fill pe-2"></i> info@example.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="topbar-right">
+                    <ul class="navbar-nav hstack">
+                        <li class="nav-item text-light fs-6 font-opensans pe-3">Follow Us:</li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-light fs-6 font-opensans pe-3"><i class="bi bi-facebook"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-light fs-6 font-opensans pe-3"><i class="bi bi-twitter"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-light fs-6 font-opensans pe-3"><i class="bi bi-linkedin"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-light fs-6 font-opensans"><i class="bi bi-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- header -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-white pe-3 pe-lg-0 py-0">
+            <a href="index.html" class="navbar-brand d-flex align-items-center px-1 mx-4 mx-lg-5 px-lg-4 font-jost fs-1 fw-bold text-dark py-2">Gardener</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto p-4 p-lg-0">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link font-18 text-dark font-opensans pe-4 text-capitalize fw-500">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link font-18 font-opensans pe-4 text-dark text-capitalize fw-500">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="service.html" class="nav-link font-18 font-opensans pe-4 text-dark text-capitalize fw-500">services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="project.html" class="nav-link font-18 font-opensans pe-4 text-dark text-capitalize fw-500">projects</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle font-18 font-opensans active pe-4 text-dark text-capitalize fw-500" data-bs-toggle="dropdown">pages</a>
+                        <ul class="dropdown-menu position-absolute py-2 bg-light">
+                            <li><a href="features.html" class="dropdown-item fs-6 text-black text-capitalize font-opensans">features</a></li>
+                            <li><a href="quote.html" class="active dropdown-item fs-6 text-black text-capitalize font-opensans">Free Quote</a></li>
+                            <li><a href="team.html" class="dropdown-item fs-6 text-black text-capitalize font-opensans">Our Team</a></li>
+                            <li><a href="testmonial.html" class="dropdown-item fs-6 text-black text-capitalize font-opensans">Testimonial</a></li>
+                            <li><a href="page.html" class="dropdown-item fs-6 text-black text-capitalize font-opensans">404 Page</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link font-18 font-opensans pe-4 text-dark text-capitalize fw-500">contact</a>
+                    </li>
+                </ul>
+                <a href="quote.html" class="d-none d-lg-block btn btn-primary fs-6 font-opensans py-4 px-3 text-capitalize rounded-0 border-0 fw-semibold">get a quote <i class="bi bi-arrow-right ps-2 fs-5 fs-bold"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- about banner -->
+    <div class="about-banner py-60">
+        <div class="py-5 text-center">
+            <h2 class="display-4 text-white font-jost fw-bold mb-4">Free Quote</h2>
+            <p class="text-white"><a href="#" class="pe-1">Home</a> / <a href="#" class="px-1">Pages</a> / &nbsp; Free Quote</p>
+        </div>
+    </div>
+
+    <!-- quote -->
+    <div class="quote py-60">
+        <div class="container">
+            <div class="main-heading text-center wow animate__animated animate__backInUp">
+                <h6 class="text-primary font-18 fw-semibold mb-3">Free Quote</h6>
+                <h2 class="font-jost text-dark display-5 fw-bold mb-5">Get A Free Quote</h2>
+            </div>
+            <div class="icon-bg rounded p-5 col-8 mx-auto wow animate__animated animate__zoomIn">
+                <form action="">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="text" class="text-capitalize form-control p-3 bg-white border-0" placeholder="Your name">
+                        </div>
+                        <div class="col-md-6 mt-3 mt-md-0">
+                            <input type="email" class="text-capitalize form-control p-3 bg-white border-0" placeholder="Your email">
+                        </div>
+                        <div class="col-md-6 mt-3">
+                            <input type="text" class="text-capitalize form-control p-3 bg-white border-0" placeholder="Your mobile">
+                        </div>
+                        <div class="col-md-6 mt-3">
+                            <input type="text" class="text-capitalize form-control p-3 bg-white border-0" placeholder="service type">
+                        </div>
+                        <div class="col-12 mt-3">
+                            <textarea name="" id="" cols="10" rows="5" class="form-control bg-white border-0">Massage</textarea>
+                        </div>
+                        <div class="text-center mt-2">
+                            <a href="#" class="btn btn-primary btn-block border-0 py-3 px-4 font-opensans fs-6 fw-500 mt-2">Submit Now</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="mt-5 bg-dark pt-5 text-white">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="font-jost fs-4 fw-semibold mb-4">Our Office</h4>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#" class="text-decoration-none text-white fs-6"><i class="bi bi-geo-alt-fill me-2"></i> 123 Street, New York, USA</a>
+                        </li>
+                        <li class="py-2">
+                            <a href="tel:+012 345 67890" class="text-decoration-none text-white fs-6"><i class="bi bi-telephone-fill me-2"></i> +012 345 67890</a>
+                        </li>
+                        <li>
+                            <a href="mailto:" class="text-decoration-none text-white fs-6"><i class="bi bi-envelope-fill me-2"></i> info@example.com</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex icon-box">
+                        <a href="#" class="text-white rounded-circle border text-center"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white rounded-circle border text-center ms-3"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white rounded-circle border text-center ms-3"><i class="bi bi-youtube"></i></a>
+                        <a href="#" class="text-white rounded-circle border text-center ms-3"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-4 mt-md-0">
+                    <h4 class="font-jost fs-4 fw-semibold mb-4">Services</h4>
+                    <ul class="list-unstyled services">
+                        <li><a href="#" class="text-decoration-none text-white fs-6"><i class="bi bi-chevron-right me-1"></i> Landscaping</a></li>
+                        <li class="mt-2"><a href="#" class="text-decoration-none text-white fs-6"><i class="bi bi-chevron-right me-1"></i> Pruning plants</a></li>
+                        <li class="mt-2"><a href="#" class="text-decoration-none text-white fs-6"><i class="bi bi-chevron-right me-1"></i> Urban Gardening</a></li>
+                        <li class="mt-2"><a href="#" class="text-decoration-none text-white fs-6"><i class="bi bi-chevron-right me-1"></i> Garden Maintenance</a></li>
+                        <li class="mt-2"><a href="#" class="text-decoration-none text-white fs-6"><i class="bi bi-chevron-right me-1"></i> Green Technology</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
+                    <h4 class="font-jost fs-4 fw-semibold mb-4">Quick Links</h4>
+                    <ul class="list-unstyled services">
+                        <li><a href="#" class="text-decoration-none text-white fs-6"><i class="bi bi-chevron-right me-1"></i> About Us</a></li>
+                        <li class="mt-2"><a href="#" class="text-decoration-none text-white fs-6"><i class="bi bi-chevron-right me-1"></i> Contact Us</a></li>
+                        <li class="mt-2"><a href="#" class="text-decoration-none text-white fs-6"><i class="bi bi-chevron-right me-1"></i> Our Services</a></li>
+                        <li class="mt-2"><a href="#" class="text-decoration-none text-white fs-6"><i class="bi bi-chevron-right me-1"></i> Terms & Condition</a></li>
+                        <li class="mt-2"><a href="#" class="text-decoration-none text-white fs-6"><i class="bi bi-chevron-right me-1"></i> Support</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
+                    <h4 class="font-jost fs-4 fw-semibold mb-4">Newsletter</h4>
+                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <div class="hstack bg-white p-2 rounded">
+                        <input type="text" placeholder="Your Name" class="bg-transparent border-0 text-secondary form-control">
+                        <button class="btn btn-primary border-0">SignUp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom py-4">
+            <div class="container">
+                <div class="d-flex justify-content-between">
+                    <p class="m-0">© <span class="border-bottom">Your Site Name</span>, All Right Reserved.</p>
+                    <p class="m-0">Designed By <span class="border-bottom">HTML Codex</span> Distributed By <span>ThemeWagon</span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="back-to-top-btn"><a href="#" class="text-decoration-none text-white fs-6"><i class="bi bi-chevron-double-up"></i></a></div>
+    
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/cdnjs.cloudflare.com_ajax_libs_jquery_2.2.2_jquery.min.js"></script>
+    <script src="js/cdn.jsdelivr.net_npm_swiper@10_swiper-bundle.min.js"></script>
+    
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script>
+        // header js 
+        $(window).scroll(function(){
+            if($(window).scrollTop() > 150) {
+                $("header").addClass("sticky-top shadow");
+                $(".back-to-top-btn").fadeIn("fixed")
+            }
+            else{
+                $("header").removeClass("sticky-top shadow");
+                $(".back-to-top-btn").fadeOut("fixed")
+            }
+        })
+
+        $(window).load(function(){
+            $(".loader-area").fadeOut(3000);
+        })
+    </script>
+</body>
+</html>

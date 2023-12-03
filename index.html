@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gardener</title>
+    <style>
+        @import url(css/bootstrap-icons.css);
+        @import url(css/bootstrap.min.css);
+        @import url(css/cdn.jsdelivr.net_npm_swiper@10_swiper-bundle.min.css);
+        @import url(css/animate.css);
+        @import url(css/animate.min.css);
+        @import url(css/media.css);
+        @import url(css/fonts.css);
+        @import url(css/style.css);
+    </style>
+</head>
+<body>
+
+    <div class="loader-area">
+        <div class="loader"></div>
+    </div>
+    
+    <!-- topbar -->
+    <div class="topbar bg-dark py-2">
+        <div class="container d-none d-lg-block">
+            <div class="d-flex justify-content-between">
+                <div class="topbar-left">
+                    <ul class="navbar-nav hstack">
+                        <li class="nav-item">
+                            <a href="tel:+012 345 6789" class="nav-link text-light fs-6 font-opensans  pe-3"><i class="bi bi-telephone-fill pe-2"></i> +012 345 6789</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="mailto:" class="nav-link text-light fs-6 font-opensans pe-3"><i class="bi bi-envelope-fill pe-2"></i> info@example.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="topbar-right">
+                    <ul class="navbar-nav hstack">
+                        <li class="nav-item text-light fs-6 font-opensans pe-3">Follow Us:</li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-light fs-6 font-opensans pe-3"><i class="bi bi-facebook"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-light fs-6 font-opensans pe-3"><i class="bi bi-twitter"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-light fs-6 font-opensans pe-3"><i class="bi bi-linkedin"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-light fs-6 font-opensans"><i class="bi bi-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- header -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-white pe-3 pe-lg-0 py-0">
+            <a href="index.html" class="navbar-brand d-flex align-items-center px-1 mx-4 mx-lg-5 px-lg-4 font-jost fs-1 fw-bold text-dark py-2">Gardener</a>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto p-4 p-lg-0">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link font-18 font-opensans active pe-4 text-capitalize fw-500">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link font-18 font-opensans pe-4 text-dark text-capitalize fw-500">about</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="service.html" class="nav-link font-18 font-opensans pe-4 text-dark text-capitalize fw-500">services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="project.html" class="nav-link font-18 font-opensans pe-4 text-dark text-capitalize fw-500">projects</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle font-18 font-opensans pe-4 text-dark text-capitalize fw-500" data-bs-toggle="dropdown">pages</a>
+                            <ul class="dropdown-menu position-absolute py-2 bg-light">
+                                <li><a href="features.html" class="dropdown-item fs-6 text-black text-capitalize font-opensans">features</a></li>
+                                <li><a href="quote.html" class="dropdown-item fs-6 text-black text-capitalize font-opensans">Free Quote</a></li>
+                                <li><a href="team.html" class="dropdown-item fs-6 text-black text-capitalize font-opensans">Our Team</a></li>
+                                <li><a href="testmonial.html" class="dropdown-item fs-6 text-black text-capitalize font-opensans">Testimonial</a></li>
+                                <li><a href="page.html" class="dropdown-item fs-6 text-black text-capitalize font-opensans">404 Page</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link font-18 font-opensans pe-4 text-dark text-capitalize fw-500">contact</a>
+                        </li>
+                    </ul>
+                    <a href="quote.html" class="d-none d-lg-block btn btn-primary fs-6 font-opensans py-4 px-3 text-capitalize rounded-0 border-0 fw-semibold">get a quote <i class="bi bi-arrow-right ps-2 fs-5 fs-bold"></i></a>
+                </div>
+        </nav>
+    </header>
+
+    <!-- banner -->
+    <div class="banner">
+        <div class="carousel slide" id="carouselExampleControls" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/carousel-1.jpg" alt="" class="w-100 object-fit-cover" data-bs-interval="1000">
+                    <div class="carousel-caption top-0 start-0 bottom-0 end-0 banner-overlay">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="content position-absolute start-50 col-lg-8 top-50 translate-middle">
+                                    <h2 class="display-1 fw-bold font-jost mb-4 wow animate__animated animate__backInUp">Make Your Home Like Garden</h2>
+                                    <a href="#" class="btn btn-primary btn-block border-0 py-3 px-4 font-opensans fs-6 fw-500 wow animate__animated animate__backInUp">Explore More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/carousel-2.jpg" alt="" class="img-fluid" data-bs-interval="2000">
+                    <div class="carousel-caption top-0 start-0 bottom-0 end-0 banner-overlay">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="content position-absolute start-50 col-lg-7 top-50 translate-middle">
+                                    <h2 class="display-1 font-30 fw-bold font-jost mb-4 wow animate__animated animate__backInUp">Create Your Own Small Garden At Home</h2>
+                                    <a href="#" class="btn btn-primary btn-block border-0 py-3 px-4 font-opensans fs-6 fw-500 wow animate__animated animate__backInUp">Explore More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bg-primary rounded" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon bg-primary rounded" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+        </div>
+    </div>
+
+    <!-- feature -->
+    <div class="top-feature position-relative">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 p-lg-0">
+                    <div class="feature wow animate__animated animate__backInUp animate__delay shadow bg-white p-4">
+                        <div class="d-flex">
+                            <div class="pt-2"><i class="bi bi-x fs-4 text-primary icon-bg rounded-circle p-2"></i></div>
+                            <div class="ps-3">
+                                <h4 class="fw-semibold font-jost text-dark">No Hidden Cost</h4>
+                                <p class="font-opensans fs-6 text-secondary">Clita erat ipsum lorem sit sed stet duo justo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 p-lg-0">
+                    <div class="feature wow animate__animated animate__backInUp animate__delay shadow bg-white p-4">
+                        <div class="d-flex">
+                            <div class="pt-2"><i class="bi bi-people-fill icon-bg fs-4 text-primary rounded-circle p-2"></i></div>
+                            <div class="ps-3">
+                                <h4 class="fw-semibold font-jost text-dark">Dedicated Team</h4>
+                                <p class="font-opensans fs-6 text-secondary">Clita erat ipsum lorem sit sed stet duo justo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 p-lg-0">
+                    <div class="feature wow animate__animated animate__backInUp animate__delay shadow bg-white p-4">
+                        <div class="d-flex">
+                            <div class="pt-2"><i class="bi bi-telephone-fill icon-bg fs-5 text-primary rounded-circle p-2"></i></div>
+                            <div class="ps-3">
+                                <h4 class="fw-semibold font-jost text-dark">24/7 Available</h4>
+                                <p class="font-opensans fs-6 text-secondary">Clita erat ipsum lorem sit sed stet duo justo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- about -->
+    <div class="about py-60">
+        <div class="container">
+            <div class="row align-items-end">
+                <div class="col-lg-3 col-md-6 wow animate__animated animate__backInUp ">
+                    <img src="img/about.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-6 col-md-6 pt-4 pt-lg-0 wow animate__animated animate__backInUp ">
+                    <div class="ps-4">
+                        <h2 class="display-1 fw-bold text-primary font-jost">25</h2>
+                        <h3 class="fs-6 font-opensans text-primary fw-normal">Year of Experience</h3>
+                        <h4 class="font-jost text-dark display-6 fw-bold">We Make Your Home Like A Garden</h4>
+                        <p class="text-secondary font-opensans fs-6">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                        <a href="#" class="btn btn-primary btn-block border-0 py-3 px-4 font-opensans fs-6 fw-500">Explore More</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12 ps-4 pt-4 pt-lg-0 wow animate__animated animate__backInUp ">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-lg-12">
+                            <div class="border-start ps-3">
+                                <i class="bi bi-award-fill display-5 text-primary"></i>
+                                <h6 class="font-jost fs-4 text-dark fw-semibold pt-3 pb-2">Award Winning</h6>
+                                <p>Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-12 pt-4">
+                            <div class="border-start ps-3">
+                                <i class="bi bi-people-fill display-5 text-primary"></i>
+                                <h6 class="font-jost fs-4 text-dark fw-semibold pt-3 pb-2">Dedicated Team</h6>
+                                <p>Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- facts -->
+    <div class="facts">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 wow animate__animated animate__backInUp ">
+                    <h3 class="text-white display-4 fw-bold font-jost count">1234</h3>
+                    <h6 class="text-light font-opensans fs-5">Happy Clients</h6>
+                </div>
+                <div class="col-lg-3 col-md-6 wow animate__animated animate__backInUp ">
+                    <h3 class="text-white display-4 fw-bold font-jost count">1234</h3>
+                    <h6 class="text-light font-opensans fs-5">Garden Complated</h6>
+                </div>
+                <div class="col-lg-3 col-md-6 wow animate__animated animate__backInUp ">
+                    <h3 class="text-white display-4 fw-bold font-jost count">1234</h3>
+                    <h6 class="text-light font-opensans fs-5">Dedicated Staff</h6>
+                </div>
+                <div class="col-lg-3 col-md-6 wow animate__animated animate__backInUp ">
+                    <h3 class="text-white display-4 fw-bold font-jost count">1234</h3>
+                    <h6 class="text-light font-opensans fs-5">Awards Achieved</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- why choose us -->
+    <div class="choose-us py-60">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 wow animate__animated animate__backInUp ">
+                    <h6 class="text-primary fw-semibold fs-5">Why Choosing Us!</h6>
+                    <h2 class="display-5 text-dark fw-bold font-jost py-3">Few Reasons Why People Choosing Us!</h2>
+                    <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                    <a href="#" class="btn btn-primary btn-block border-0 py-3 px-4 font-opensans fs-6 fw-500 mt-2">Explore More</a>
+                </div>
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 wow animate__animated animate__backInUp">
+                            <div class="col-12">
+                                <div class="card p-3 text-center border-0 bg-white shadow">
+                                    <div class="card-body">
+                                        <div class="mb-4 pt-4 px-3 pb-3"><i class="bi bi-check-lg icon-bg rounded-circle display-5 px-3 py-2 fw-bold text-primary"></i></div>
+                                        <div class="card-title font-jost text-dark fs-4 mb-3 fw-semibold">100% Satisfaction</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-4">
+                                <div class="card p-3 text-center border-0 bg-white shadow">
+                                    <div class="card-body">
+                                        <div class="mb-4 pt-4 px-3 pb-3"><i class="bi bi-people-fill icon-bg rounded-circle display-5 px-3 py-2 fw-bold text-primary"></i></div>
+                                        <div class="card-title font-jost text-dark fs-4 mb-3 fw-semibold">Dedicated Team</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mt-4 mt-lg-0 wow animate__animated animate__backInUp">
+                            <div class="col-12">
+                                <div class="card p-3 text-center border-0 bg-white shadow">
+                                    <div class="card-body">
+                                        <div class="mb-4 pt-4 px-3 pb-3"><i class="bi bi-tools icon-bg rounded-circle display-5 px-3 py-2 fw-bold text-primary"></i></div>
+                                        <div class="card-title font-jost text-dark fs-4 mb-3 fw-semibold">Modern Equipment</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- our services -->
+    <div class="services py-60">
+        <div class="container">
+            <div class="main-heading text-center mx-auto col-lg-5 col-10 col-md-7 animate__animated animate__backInUp ">
+                <h6 class="text-primary fw-semibold fs-5">Our Services</h6>
+                <h3 class="text-dark display-5 fw-bold mt-3 mb-5">Services That We Offer For You</h3>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 wow animate__animated animate__backInUp ">
+                    <div class="service-item text-center d-flex h-100 position-relative">
+                        <div class="service-img rounded">
+                            <img src="img/service-1.jpg" alt="" class="rounded">
+                        </div>
+                        <div class="card text-center shadow bg-white p-4 border-0">
+                            <div class="card-img"><img src="img/icon-3.png" alt="" class="img-fluid"></div>
+                            <div class="card-body">
+                                <div class="card-title my-2 fs-4 font-jost text-dark fw-bold">Landscaping</div>
+                                <p class="card-text">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
+                                <a href="#" class="btn p-1 rounded icon-bg"><i class="bi bi-plus fs-4 text-primary"></i> read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-4 mt-md-0 wow animate__animated animate__backInUp ">
+                    <div class="service-item text-center d-flex h-100 position-relative">
+                        <div class="service-img rounded">
+                            <img src="img/service-2.jpg" alt="" class="rounded">
+                        </div>
+                        <div class="card text-center shadow bg-white p-4 border-0">
+                            <div class="card-img"><img src="img/icon-6.png" alt="" class="img-fluid"></div>
+                            <div class="card-body">
+                                <div class="card-title my-2 fs-4 font-jost text-dark fw-bold">Pruning plants</div>
+                                <p class="card-text">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
+                                <a href="#" class="btn p-1 rounded icon-bg"><i class="bi bi-plus fs-4 text-primary"></i> read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-4 mt-lg-0 wow animate__animated animate__backInUp ">
+                    <div class="service-item text-center d-flex h-100 position-relative">
+                        <div class="service-img rounded">
+                            <img src="img/service-3.jpg" alt="" class="rounded">
+                        </div>
+                        <div class="card text-center shadow bg-white p-4 border-0">
+                            <div class="card-img"><img src="img/icon-5.png" alt="" class="img-fluid"></div>
+                            <div class="card-body">
+                                <div class="card-title my-2 fs-4 font-jost text-dark fw-bold">Irrigation & Drainage</div>
+                                <p class="card-text">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
+                                <a href="#" class="btn p-1 rounded icon-bg"><i class="bi bi-plus fs-4 text-primary"></i> read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-4 wow animate__animated animate__backInUp ">
+                    <div class="service-item text-center d-flex h-100 position-relative">
+                        <div class="service-img rounded">
+                            <img src="img/service-4.jpg" alt="" class="rounded">
+                        </div>
+                        <div class="card text-center shadow bg-white p-4 border-0">
+                            <div class="card-img"><img src="img/icon-4.png" alt="" class="img-fluid"></div>
+                            <div class="card-body">
+                                <div class="card-title my-2 fs-4 font-jost text-dark fw-bold">Landscaping</div>
+                                <p class="card-text">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
+                                <a href="#" class="btn p-1 rounded icon-bg"><i class="bi bi-plus fs-4 text-primary"></i> read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-4 wow animate__animated animate__backInUp ">
+                    <div class="service-item text-center d-flex h-100 position-relative">
+                        <div class="service-img rounded">
+                            <img src="img/service-5.jpg" alt="" class="rounded">
+                        </div>
+                        <div class="card text-center shadow bg-white p-4 border-0">
+                            <div class="card-img"><img src="img/icon-8.png" alt="" class="img-fluid"></div>
+                            <div class="card-body">
+                                <div class="card-title my-2 fs-4 font-jost text-dark fw-bold">Pruning plants</div>
+                                <p class="card-text">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
+                                <a href="#" class="btn p-1 rounded icon-bg"><i class="bi bi-plus fs-4 text-primary"></i> read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-4 wow animate__animated animate__backInUp ">
+                    <div class="service-item text-center d-flex h-100 position-relative">
+                        <div class="service-img rounded">
+                            <img src="img/service-6.jpg" alt="" class="rounded">
+                        </div>
+                        <div class="card text-center shadow bg-white p-4 border-0">
+                            <div class="card-img"><img src="img/icon-2.png" alt="" class="img-fluid"></div>
+                            <div class="card-body">
+                                <div class="card-title my-2 fs-4 font-jost text-dark fw-bold">Irrigation & Drainage</div>
+                                <p class="card-text">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
+                                <a href="#" class="btn p-1 rounded icon-bg"><i class="bi bi-plus fs-4 text-primary"></i> read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- form -->
+    <div class="form py-60">
+        <div class="container">
+            <div class="bg-white rounded p-5 col-8 mx-auto wow animate__animated animate__zoomIn">
+                <h2 class="font-jost text-dark display-6 fw-bold text-center mb-4 wow animate__animated animate__backInUp">Get A Free Quote</h2>
+                <form action="">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="text" class="text-capitalize form-control p-3 icon-bg border-0" placeholder="Your name">
+                        </div>
+                        <div class="col-md-6 mt-3 mt-md-0">
+                            <input type="email" class="text-capitalize form-control p-3 icon-bg border-0" placeholder="Your email">
+                        </div>
+                        <div class="col-md-6 mt-3">
+                            <input type="text" class="text-capitalize form-control p-3 icon-bg border-0" placeholder="Your mobile">
+                        </div>
+                        <div class="col-md-6 mt-3">
+                            <input type="text" class="text-capitalize form-control p-3 icon-bg border-0" placeholder="service type">
+                        </div>
+                        <div class="col-12 mt-3">
+                            <textarea name="" id="" cols="10" rows="5" class="form-control icon-bg border-0">Massage</textarea>
+                        </div>
+                        <div class="text-center mt-2">
+                            <a href="#" class="btn btn-primary btn-block border-0 py-3 px-4 font-opensans fs-6 fw-500 mt-2">Submit Now</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- project -->
+    <div class="project py-60">
+        <div class="container">
+            <div class="main-heading text-center mx-auto col-lg-6 col-10 col-md-8 animate__animated animate__backInUp">
+                <h6 class="text-primary fw-semibold fs-5">Our Projects</h6>
+                <h3 class="text-dark display-5 fw-bold mt-3 mb-5">Some Of Our Wonderful Projects</h3>
+            </div>
+            <div>
+                <ul class="nav wow animate__animated animate__backInUp nav-pills icon-bg col-xl-4 col-lg-5 col-md-6 col-sm-8 justify-content-center mx-auto rounded pt-1 pb-3" id="pills-tab">
+                    <li class="nav-item">
+                        <button class="nav-link active border-0 fw-500 px-2 pt-2 pb-0 bg-transparent text-primary font-opensans fs-6" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all">All</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link border-0 fw-500 px-2 pt-2 pb-0 bg-transparent text-primary font-opensans fs-6" id="pills-CompleteProjects-tab" data-bs-toggle="pill" data-bs-target="#pills-CompleteProjects">Complete Projects</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link border-0 fw-500 px-2 pt-2 pb-0 bg-transparent text-primary font-opensans fs-6" id="pills-OngoingProjects-tab" data-bs-toggle="pill" data-bs-target="#pills-OngoingProjects">Ongoing Projects</button>
+                    </li>
+                </ul>
+                <div class="tab-content mt-5" id="pills-tabcontent">
+                    <div class="tab-pane fade show active" id="pills-all">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 wow animate__animated animate__backInUp">
+                                <div class="our-project">
+                                    <img src="img/service-1.jpg" alt="" class="img-fluid rounded">
+                                    <div class="project-text text-center">
+                                        <h4 class="font-jost text-white mb-5">Landscaping</h4>
+                                        <div class="d-flex justify-content-center">
+                                            <a href="#" class="text-primary text-center rounded-circle fs-6"><i class="bi bi-eye-fill"></i></a>
+                                            <a href="#" class="text-primary ms-3 text-center rounded-circle fs-5 fw-bold"><i class="bi bi-link-45deg"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 mt-4 wow mt-md-0 animate__animated animate__backInUp">
+                                <div class="our-project">
+                                    <img src="img/service-2.jpg" alt="" class="img-fluid rounded">
+                                    <div class="project-text text-center">
+                                        <h4 class="font-jost text-white mb-5">Pruning plants</h4>
+                                        <div class="d-flex justify-content-center">
+                                            <a href="#" class="text-primary text-center rounded-circle fs-6"><i class="bi bi-eye-fill"></i></a>
+                                            <a href="#" class="text-primary ms-3 text-center rounded-circle fs-5 fw-bold"><i class="bi bi-link-45deg"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 mt-4 wow mt-lg-0 animate__animated animate__backInUp">
+                                <div class="our-project">
+                                    <img src="img/service-3.jpg" alt="" class="img-fluid rounded">
+                                    <div class="project-text text-center">
+                                        <h4 class="font-jost text-white mb-5">Irrigation & Drainage</h4>
+                                        <div class="d-flex justify-content-center">
+                                            <a href="#" class="text-primary text-center rounded-circle fs-6"><i class="bi bi-eye-fill"></i></a>
+                                            <a href="#" class="text-primary ms-3 text-center rounded-circle fs-5 fw-bold"><i class="bi bi-link-45deg"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 mt-4 wow animate__animated animate__backInUp">
+                                <div class="our-project">
+                                    <img src="img/service-4.jpg" alt="" class="img-fluid rounded">
+                                    <div class="project-text text-center">
+                                        <h4 class="font-jost text-white mb-5">Garden Maintenance</h4>
+                                        <div class="d-flex justify-content-center">
+                                            <a href="#" class="text-primary text-center rounded-circle fs-6"><i class="bi bi-eye-fill"></i></a>
+                                            <a href="#" class="text-primary ms-3 text-center rounded-circle fs-5 fw-bold"><i class="bi bi-link-45deg"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 mt-4 wow animate__animated animate__backInUp">
+                                <div class="our-project">
+                                    <img src="img/service-5.jpg" alt="" class="img-fluid rounded">
+                                    <div class="project-text text-center">
+                                        <h4 class="font-jost text-white mb-5">Green Technology</h4>
+                                        <div class="d-flex justify-content-center">
+                                            <a href="#" class="text-primary text-center rounded-circle fs-6"><i class="bi bi-eye-fill"></i></a>
+                                            <a href="#" class="text-primary ms-3 text-center rounded-circle fs-5 fw-bold"><i class="bi bi-link-45deg"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 mt-4 wow animate__animated animate__backInUp">
+                                <div class="our-project">
+                                    <img src="img/service-6.jpg" alt="" class="img-fluid rounded">
+                                    <div class="project-text text-center">
+                                        <h4 class="font-jost text-white mb-5">Urban Gardening</h4>
+                                        <div class="d-flex justify-content-center">
+                                            <a href="#" class="text-primary text-center rounded-circle fs-6"><i class="bi bi-eye-fill"></i></a>
+                                            <a href="#" class="text-primary ms-3 text-center rounded-circle fs-5 fw-bold"><i class="bi bi-link-45deg"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade wow animate__animated animate__zoomIn" id="pills-CompleteProjects">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-4 col-md-6 animate__animated animate__backInUp">
+                                <div class="our-project">
+                                    <img src="img/service-1.jpg" alt="" class="img-fluid rounded">
+                                    <div class="project-text text-center">
+                                        <h4 class="font-jost text-white mb-5">Landscaping</h4>
+                                        <div class="d-flex justify-content-center">
+                                            <a href="#" class="text-primary text-center rounded-circle fs-6"><i class="bi bi-eye-fill"></i></a>
+                                            <a href="#" class="text-primary ms-3 text-center rounded-circle fs-5 fw-bold"><i class="bi bi-link-45deg"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 mt-4 mt-md-0 animate__animated animate__backInUp">
+                                <div class="our-project">
+                                    <img src="img/service-3.jpg" alt="" class="img-fluid rounded">
+                                    <div class="project-text text-center">
+                                        <h4 class="font-jost text-white mb-5">Irrigation & Drainage</h4>
+                                        <div class="d-flex justify-content-center">
+                                            <a href="#" class="text-primary text-center rounded-circle fs-6"><i class="bi bi-eye-fill"></i></a>
+                                            <a href="#" class="text-primary ms-3 text-center rounded-circle fs-5 fw-bold"><i class="bi bi-link-45deg"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 mt-4 mt-lg-0 animate__animated animate__backInUp">
+                                <div class="our-project">
+                                    <img src="img/service-5.jpg" alt="" class="img-fluid rounded">
+                                    <div class="project-text text-center">
+                                        <h4 class="font-jost text-white mb-5">Green Technology</h4>
+                                        <div class="d-flex justify-content-center">
+                                            <a href="#" class="text-primary text-center rounded-circle fs-6"><i class="bi bi-eye-fill"></i></a>
+                                            <a href="#" class="text-primary ms-3 text-center rounded-circle fs-5 fw-bold"><i class="bi bi-link-45deg"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade wow animate__animated animate__zoomInp" id="pills-OngoingProjects">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-4 col-md-6 animate__animated animate__backInUp">
+                                <div class="our-project">
+                                    <img src="img/service-2.jpg" alt="" class="img-fluid rounded">
+                                    <div class="project-text text-center">
+                                        <h4 class="font-jost text-white mb-5">Landscaping</h4>
+                                        <div class="d-flex justify-content-center">
+                                            <a href="#" class="text-primary text-center rounded-circle fs-6"><i class="bi bi-eye-fill"></i></a>
+                                            <a href="#" class="text-primary ms-3 text-center rounded-circle fs-5 fw-bold"><i class="bi bi-link-45deg"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 mt-4 mt-md-0 animate__animated animate__backInUp">
+                                <div class="our-project">
+                                    <img src="img/service-4.jpg" alt="" class="img-fluid rounded">
+                                    <div class="project-text text-center">
+                                        <h4 class="font-jost text-white mb-5">Irrigation & Drainage</h4>
+                                        <div class="d-flex justify-content-center">
+                                            <a href="#" class="text-primary text-center rounded-circle fs-6"><i class="bi bi-eye-fill"></i></a>
+                                            <a href="#" class="text-primary ms-3 text-center rounded-circle fs-5 fw-bold"><i class="bi bi-link-45deg"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 mt-4 mt-lg-0 animate__animated animate__backInUp">
+                                <div class="our-project">
+                                    <img src="img/service-6.jpg" alt="" class="img-fluid rounded">
+                                    <div class="project-text text-center">
+                                        <h4 class="font-jost text-white mb-5">Green Technology</h4>
+                                        <div class="d-flex justify-content-center">
+                                            <a href="#" class="text-primary text-center rounded-circle fs-6"><i class="bi bi-eye-fill"></i></a>
+                                            <a href="#" class="text-primary ms-3 text-center rounded-circle fs-5 fw-bold"><i class="bi bi-link-45deg"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- team -->
+    <div class="team py-60">
+        <div class="container">
+            <div class="main-heading text-center mx-auto col-lg-6 col-10 col-md-8 animate__animated animate__backInUp">
+                <h6 class="text-primary fw-semibold fs-5">Our Team</h6>
+                <h3 class="text-dark display-5 fw-bold mt-3 mb-5">Dedicated & Experienced Team Members</h3>
+            </div>
+            <div class="row mt-5 justify-content-center">
+                <div class="col-lg-4 col-md-6 wow animate__animated animate__backInUp">
+                    <div class="team-member position-relative overflow-hidden">
+                        <img src="img/team-1.jpg" alt="" class="img-fluid rounded">
+                        <div class="member-info">
+                            <div class="bg-white p-4 rounded-end">
+                                <h6 class="fw-bold fs-4 font-jost text-dark">Doris Jordan</h6>
+                                <p class="text-primary">Landscape Designer</p>
+                                <div class="d-flex">
+                                    <a href="#" class="text-primary text-center rounded-circle fs-6 fw-bold"><i class="bi bi-facebook"></i></a>
+                                    <a href="#" class="text-primary ms-3 text-center rounded-circle fs-6 fw-bold"><i class="bi bi-twitter"></i></a>
+                                    <a href="#" class="text-primary ms-3 text-center rounded-circle fs-6 fw-bold"><i class="bi bi-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-4 mt-md-0 wow animate__animated animate__backInUp animate__delay-2s">
+                    <div class="team-member position-relative overflow-hidden">
+                        <img src="img/team-2.jpg" alt="" class="img-fluid rounded">
+                        <div class="member-info">
+                            <div class="bg-white p-4 rounded-end">
+                                <h6 class="fw-bold fs-4 font-jost text-dark">Johnny Ramirez</h6>
+                                <p class="text-primary">Garden Designer</p>
+                                <div class="d-flex">
+                                    <a href="#" class="text-primary text-center rounded-circle fs-6 fw-bold"><i class="bi bi-facebook"></i></a>
+                                    <a href="#" class="text-primary ms-3 text-center rounded-circle fs-6 fw-bold"><i class="bi bi-twitter"></i></a>
+                                    <a href="#" class="text-primary ms-3 text-center rounded-circle fs-6 fw-bold"><i class="bi bi-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-4 mt-lg-0 wow animate__animated animate__backInUp animate__delay-2s">
+                    <div class="team-member position-relative overflow-hidden">
+                        <img src="img/team-3.jpg" alt="" class="img-fluid rounded">
+                        <div class="member-info">
+                            <div class="bg-white p-4 rounded-end">
+                                <h6 class="fw-bold fs-4 font-jost text-dark">Diana Wagner</h6>
+                                <p class="text-primary">Senior Gardener</p>
+                                <div class="d-flex">
+                                    <a href="#" class="text-primary text-center rounded-circle fs-6 fw-bold"><i class="bi bi-facebook"></i></a>
+                                    <a href="#" class="text-primary ms-3 text-center rounded-circle fs-6 fw-bold"><i class="bi bi-twitter"></i></a>
+                                    <a href="#" class="text-primary ms-3 text-center rounded-circle fs-6 fw-bold"><i class="bi bi-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonial -->
+    <div class="testimonial py-60 mb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 wow animate__animated animate__backInUp">
+                    <div class="me-4">
+                        <h6 class="text-primary fw-semibold fs-5">Testimonial</h6>
+                        <h2 class="display-5 text-dark fw-bold font-jost py-3">What Our Clients Say About Us!</h2>
+                        <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit sed stet lorem sit clita duo justo.</p>
+                        <a href="#" class="btn btn-primary btn-block border-0 py-3 px-4 font-opensans fs-6 fw-500 mt-2">See More</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-5 mt-lg-0 wow animate__animated animate__backInUp animate__delay-2s">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="slide">
+                                <img src="img/testimonial-2.jpg" alt="" class="rounded">
+                                <p class="fs-5 mt-3">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.</p>
+                                <h4 class="text-dark font-jost">Client Name</h4>
+                                <h6 class="fw-normal">Profession</h6>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="slide">
+                                <img src="img/testimonial-1.jpg" alt="" class="rounded">
+                                <p class="fs-5 mt-3">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.</p>
+                                <h4 class="text-dark font-jost">Client Name</h4>
+                                <h6 class="fw-normal">Profession</h6>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="mt-5 bg-dark pt-5 text-white">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="font-jost fs-4 fw-semibold mb-4">Our Office</h4>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#" class="text-decoration-none text-white fs-6"><i class="bi bi-geo-alt-fill me-2"></i> 123 Street, New York, USA</a>
+                        </li>
+                        <li class="py-2">
+                            <a href="tel:+012 345 67890" class="text-decoration-none text-white fs-6"><i class="bi bi-telephone-fill me-2"></i> +012 345 67890</a>
+                        </li>
+                        <li>
+                            <a href="mailto:" class="text-decoration-none text-white fs-6"><i class="bi bi-envelope-fill me-2"></i> info@example.com</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex icon-box">
+                        <a href="#" class="text-white rounded-circle border text-center"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white rounded-circle border text-center ms-3"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white rounded-circle border text-center ms-3"><i class="bi bi-youtube"></i></a>
+                        <a href="#" class="text-white rounded-circle border text-center ms-3"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-4 mt-md-0">
+                    <h4 class="font-jost fs-4 fw-semibold mb-4">Services</h4>
+                    <ul class="list-unstyled services">
+                        <li><a href="#" class="text-decoration-none text-white fs-6"><i class="bi bi-chevron-right me-1"></i> Landscaping</a></li>
+                        <li class="mt-2"><a href="#" class="text-decoration-none text-white fs-6"><i class="bi bi-chevron-right me-1"></i> Pruning plants</a></li>
+                        <li class="mt-2"><a href="#" class="text-decoration-none text-white fs-6"><i class="bi bi-chevron-right me-1"></i> Urban Gardening</a></li>
+                        <li class="mt-2"><a href="#" class="text-decoration-none text-white fs-6"><i class="bi bi-chevron-right me-1"></i> Garden Maintenance</a></li>
+                        <li class="mt-2"><a href="#" class="text-decoration-none text-white fs-6"><i class="bi bi-chevron-right me-1"></i> Green Technology</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
+                    <h4 class="font-jost fs-4 fw-semibold mb-4">Quick Links</h4>
+                    <ul class="list-unstyled services">
+                        <li><a href="#" class="text-decoration-none text-white fs-6"><i class="bi bi-chevron-right me-1"></i> About Us</a></li>
+                        <li class="mt-2"><a href="#" class="text-decoration-none text-white fs-6"><i class="bi bi-chevron-right me-1"></i> Contact Us</a></li>
+                        <li class="mt-2"><a href="#" class="text-decoration-none text-white fs-6"><i class="bi bi-chevron-right me-1"></i> Our Services</a></li>
+                        <li class="mt-2"><a href="#" class="text-decoration-none text-white fs-6"><i class="bi bi-chevron-right me-1"></i> Terms & Condition</a></li>
+                        <li class="mt-2"><a href="#" class="text-decoration-none text-white fs-6"><i class="bi bi-chevron-right me-1"></i> Support</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
+                    <h4 class="font-jost fs-4 fw-semibold mb-4">Newsletter</h4>
+                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <div class="hstack bg-white p-2 rounded">
+                        <input type="text" placeholder="Your Name" class="bg-transparent border-0 text-secondary form-control">
+                        <button class="btn btn-primary border-0">SignUp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom py-4">
+            <div class="container">
+                <div class="d-flex justify-content-between">
+                    <p class="m-0">© <span class="border-bottom">Your Site Name</span>, All Right Reserved.</p>
+                    <p class="m-0">Designed By <span class="border-bottom">HTML Codex</span> Distributed By <span>ThemeWagon</span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <div class="back-to-top-btn"><a href="#" class="text-decoration-none text-white fs-6"><i class="bi bi-chevron-double-up"></i></a></div>
+    
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/cdnjs.cloudflare.com_ajax_libs_jquery_2.2.2_jquery.min.js"></script>
+    <script src="js/cdn.jsdelivr.net_npm_swiper@10_swiper-bundle.min.js"></script>
+    
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script>
+        // header js 
+        $(window).scroll(function(){
+            if($(window).scrollTop() > 150) {
+                $("header").addClass("sticky-top shadow");
+                $(".back-to-top-btn").fadeIn("fixed");
+            }
+            else{
+                $("header").removeClass("sticky-top shadow");
+                $(".back-to-top-btn").fadeOut("fixed");
+            }
+        })
+
+        $(window).load(function(){
+            $(".loader-area").fadeOut(3000);
+        })
+    </script>
+    <script>
+            $('.count').each(function () {
+        $(this).prop('Counter',0).animate({
+            Counter: $(this).text()
+        }, {
+            duration: 3000,
+            easing: 'swing',
+            step: function (now) {
+                $(this).text(Math.ceil(now));
+            }
+        });
+        });
+    </script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop:true,
+          pagination: {
+            el: ".swiper-pagination",
+            dynamicBullets: true,
+          },
+          autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      }
+        });
+      </script>
+</body>
+</html>
